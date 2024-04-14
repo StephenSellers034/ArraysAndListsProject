@@ -36,6 +36,10 @@ namespace ArraysAndLists
                 {
                     evens.Add(i);
                 }
+                else if(i % 2 != 0)
+                {
+                    odds.Add(i);
+                }
                 else
                 {
                     odds.Add(i);
@@ -48,18 +52,20 @@ namespace ArraysAndLists
             /* Using a foreach loop,
              * display the numbers in your "evens" list
              */
-            foreach(int i in evens)
+            foreach(int num in evens)
             {
-                Console.WriteLine(evens);
+                Console.WriteLine("Even numbers:");
+                Console.WriteLine(num);
             }
-
+            Console.WriteLine();
             
 
             /* Using a for loop,
              * display the numbers in your "odds" list
              */
-            for(int i = 0;i < odds.Count; i++)
+            for(int i = 0; i < odds.Count; i++)
             {
+                Console.WriteLine("Odd numbers:");
                 Console.WriteLine(odds[i]);
             }
         }
